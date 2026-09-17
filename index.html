@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Capify | Personal, Home, Business &amp; Other Loan Solutions</title>
+  <meta name="description"
+    content="Capify provides loan solutions for personal, home, business, education, vehicle and other financial needs.">
+  <meta property="og:title" content="Capify — Big plans start here.">
+  <meta property="og:description"
+    content="Explore personal, home, business, education and vehicle loan solutions with Capify.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero.jpg">
+  <meta name="theme-color" content="#0756A8">
+  <!-- Set your production canonical URL and absolute Open Graph image URL before publishing. -->
+  <link rel="canonical" href="https://example.com/">
+  <link rel="icon" type="image/png" href="images/capify-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;650;700;750;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24">
+        <path d="M4 12h15m-6-6 6 6-6 6" />
+      </symbol>
+      <symbol id="i-home" viewBox="0 0 24 24">
+        <path d="m3 10 9-7 9 7M5 9v12h14V9M9 21v-8h6v8" />
+      </symbol>
+      <symbol id="i-car" viewBox="0 0 24 24">
+        <path d="m4 10 2-6h12l2 6M3 17v-7h18v7H3Zm2 0v3m14-3v3M6 13h2m8 0h2" />
+      </symbol>
+      <symbol id="i-business" viewBox="0 0 24 24">
+        <rect x="3" y="7" width="18" height="14" rx="2" />
+        <path d="M8 7V3h8v4M3 12l9 3 9-3m-9 1v4" />
+      </symbol>
+      <symbol id="i-education" viewBox="0 0 24 24">
+        <path d="m2 8 10-5 10 5-10 5L2 8Zm4 2v7q6 6 12 0v-7m4-2v9" />
+      </symbol>
+      <symbol id="i-person" viewBox="0 0 24 24">
+        <circle cx="12" cy="7" r="4" />
+        <path d="M4 21v-2a8 8 0 0 1 16 0v2" />
+      </symbol>
+      <symbol id="i-property" viewBox="0 0 24 24">
+        <path d="M4 21V3h12v18M16 10h4v11M2 21h20M8 7h4M8 11h4m-4 4h4m-3 6v-3h2v3" />
+      </symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24">
+        <path d="m12 2 9 4v6c0 5-9 10-9 10S3 17 3 12V6l9-4Z" />
+        <path d="m8 12 3 3 5-6" />
+      </symbol>
+      <symbol id="i-check" viewBox="0 0 24 24">
+        <path d="m5 12 4 4L19 6" />
+      </symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24">
+        <path d="m5 3 4 1 1 5-3 2c2 3 3 4 6 6l2-3 5 1 1 4c-1 6-10 1-14-3S-2 4 5 3Z" />
+      </symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24">
+        <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z" />
+        <circle cx="12" cy="10" r="2.5" />
+      </symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24">
+        <rect x="3" y="5" width="18" height="14" rx="2" />
+        <path d="m3 6 9 7 9-7" />
+      </symbol>
+      <symbol id="i-bolt" viewBox="0 0 24 24">
+        <path d="m13 2-9 12h7l-1 8 10-13h-7l1-7Z" />
+      </symbol>
+      <symbol id="i-support" viewBox="0 0 24 24">
+        <path d="M4 14V10a8 8 0 0 1 16 0v7q0 5-8 5M4 11H2v7h4v-7H4Zm16 0h2v7h-4v-7h2Z" />
+      </symbol>
+      <symbol id="i-star" viewBox="0 0 24 24">
+        <path d="m12 2 3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6Z" />
+      </symbol>
+      <symbol id="i-form" viewBox="0 0 24 24">
+        <path d="M14 3H4v18h16V11M8 9h3m-3 5h4m-4 3h8m-1-6 7-7-3-3-7 7-1 4 4-1Z" />
+      </symbol>
+      <symbol id="i-wallet" viewBox="0 0 24 24">
+        <path d="M20 7V3L4 6v15h17V7H4m17 5h-7v5h7m-4-3h1" />
+      </symbol>
+      <symbol id="i-percent" viewBox="0 0 24 24">
+        <path d="m5 20 14-16" />
+        <circle cx="6" cy="6" r="3" />
+        <circle cx="18" cy="18" r="3" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Capify home"><img src="images/capify-logo.png"
+          alt="Capify — UNIT OF MEDIPEY CREDIT PVT LTD" width="653" height="228"></a>
+      <nav id="navigation" class="navigation" aria-label="Main navigation">
+        <a href="#home" class="active" aria-current="location">Home</a><a href="#loans">Our Loans</a><a
+          href="#why-us">Why Choose Us</a><a href="#how-it-works">How It Works</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="call-us"><svg class="icon">
+            <use href="#i-phone" />
+          </svg><span>Call Us<strong>+91 XXXXX XXXXX</strong></span></div><a href="#application"
+          class="button button-small">Apply Now <svg class="icon">
+            <use href="#i-arrow" />
+          </svg></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"
+          aria-controls="navigation"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="eyebrow hero-badge"><span></span> YOUR DREAMS <b>|</b> OUR SUPPORT</span>
+          <h1>Get the Right Loan<br>for Your <span>Big Plans<span class="heading-mark"></span></span></h1>
+          <p class="hero-description">Capify helps you get quick, secure and hassle-free loans for your personal and
+            business needs.</p>
+          <div class="trust-points"><span><svg class="icon">
+                <use href="#i-check" />
+              </svg> Fast Approval</span><span><svg class="icon">
+                <use href="#i-check" />
+              </svg> Competitive Rates</span><span><svg class="icon">
+                <use href="#i-check" />
+              </svg> 100% Confidential</span></div>
+          <div class="hero-buttons"><a href="#application" class="button">Apply Now <svg class="icon">
+                <use href="#i-arrow" />
+              </svg></a><a class="button button-secondary" href="#how-it-works"><span class="play-icon">▶</span> How It
+              Works</a></div>
+          <div class="hero-note"><span class="note-icon"><svg class="icon">
+                <use href="#i-shield" />
+              </svg></span><span>A little support. A world of possibilities.<small>Let's take the next step,
+                together.</small></span></div>
+        </div>
+        <div class="hero-visual" aria-label="Loan solutions for life's big plans">
+          <span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><span
+            class="decor-dot dot-one"></span><span class="decor-dot dot-two"></span>
+          <div class="photo-frame"><img src="images/hero.jpg"
+              alt="Smiling customer holding her phone and planning her next step" width="1122" height="1402"
+              fetchpriority="high"></div>
+          <a href="#application" data-loan="Home Loan" class="floating-card float-home"><span class="mini-icon"><svg
+                class="icon">
+                <use href="#i-home" />
+              </svg></span><span><small>A space of your own</small>Home Loan</span></a>
+          <a href="#application" data-loan="Car Loan" class="floating-card float-car"><span class="mini-icon warm"><svg
+                class="icon">
+                <use href="#i-car" />
+              </svg></span><span>Car Loan</span></a>
+          <a href="#application" data-loan="Business Loan" class="floating-card float-business"><span
+              class="mini-icon"><svg class="icon">
+                <use href="#i-business" />
+              </svg></span><span><small>Make your next move</small>Business Loan</span></a>
+          <a href="#application" data-loan="Education Loan" class="floating-card float-education"><span
+              class="mini-icon warm"><svg class="icon">
+                <use href="#i-education" />
+              </svg></span><span>Education Loan</span></a>
+          <a href="#application" data-loan="Personal Loan" class="floating-card float-personal"><span
+              class="mini-icon"><svg class="icon">
+                <use href="#i-person" />
+              </svg></span><span>Personal Loan</span></a>
+          <div class="visual-caption"><span></span> BIG DREAMS. REAL POSSIBILITIES.</div>
+        </div>
+      </div>
+      <div class="hero-bottom container"><span>YOUR NEXT CHAPTER STARTS HERE</span>
+        <div class="bottom-line"></div><span>Made for your life. Built around your needs.</span><a href="#loans"
+          aria-label="Explore our loans">↓</a>
+      </div>
+    </section>
+
+    <section id="loans" class="section loans-section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><span class="eyebrow">FINANCING YOUR POSSIBILITIES</span>
+            <h2>Our Loan Services</h2>
+            <p>We offer a wide range of loan products to meet your every need.</p>
+          </div><span class="section-side-note">Different dreams.<br><strong>The right support.</strong></span>
+        </div>
+        <div class="loan-grid">
+          <article class="loan-card reveal"><span class="card-index">01</span><span class="service-icon"><svg
+                class="icon">
+                <use href="#i-home" />
+              </svg></span>
+            <h3>Home Loan</h3>
+            <p>Build your dream home with flexible EMI options.</p><button class="text-link"
+              data-details="Home Loan">Know More <svg class="icon">
+                <use href="#i-arrow" />
+              </svg></button>
+          </article>
+          <article class="loan-card reveal"><span class="card-index">02</span><span class="service-icon"><svg
+                class="icon">
+                <use href="#i-car" />
+              </svg></span>
+            <h3>Car Loan</h3>
+            <p>Drive your dreams with convenient financing options.</p><button class="text-link"
+              data-details="Car Loan">Know More <svg class="icon">
+                <use href="#i-arrow" />
+              </svg></button>
+          </article>
+          <article class="loan-card reveal"><span class="card-index">03</span><span class="service-icon"><svg
+                class="icon">
+                <use href="#i-business" />
+              </svg></span>
+            <h3>Business Loan</h3>
+            <p>Grow your business with quick and simple financing.</p><button class="text-link"
+              data-details="Business Loan">Know More <svg class="icon">
+                <use href="#i-arrow" />
+              </svg></button>
+          </article>
+          <article class="loan-card reveal"><span class="card-index">04</span><span class="service-icon"><svg
+                class="icon">
+                <use href="#i-education" />
+              </svg></span>
+            <h3>Education Loan</h3>
+            <p>Invest in your future with flexible education funding.</p><button class="text-link"
+              data-details="Education Loan">Know More <svg class="icon">
+                <use href="#i-arrow" />
+              </svg></button>
+          </article>
+          <article class="loan-card reveal"><span class="card-index">05</span><span class="service-icon"><svg
+                class="icon">
+                <use href="#i-person" />
+              </svg></span>
+            <h3>Personal Loan</h3>
+            <p>Meet your personal financial needs with convenient options.</p><button class="text-link"
+              data-details="Personal Loan">Know More <svg class="icon">
+                <use href="#i-arrow" />
+              </svg></button>
+          </article>
+          <article class="loan-card reveal"><span class="card-index">06</span><span class="service-icon"><svg
+                class="icon">
+                <use href="#i-property" />
+              </svg></span>
+            <h3>Loan Against Property</h3>
+            <p>Access funds against your property with flexible options.</p><button class="text-link"
+              data-details="Loan Against Property">Know More <svg class="icon">
+                <use href="#i-arrow" />
+              </svg></button>
+          </article>
+        </div>
+        <p class="loan-footnote"><svg class="icon">
+            <use href="#i-support" />
+          </svg> Not sure which loan is right for you? <a href="#contact">Let's figure it out together
+            <span>↗</span></a></p>
+      </div>
+    </section>
+
+    <!-- <section id="how-it-works" class="section process-section">
+      <div class="container">
+        <div class="section-heading centered reveal"><span class="eyebrow">SIMPLE &amp; EASY</span>
+          <h2>Big goals. Simple steps.</h2>
+          <h3 class="process-subheading">How It Works</h3>
+          <p>Getting your loan is simple, quick and hassle-free.<br>Just follow these easy steps.</p>
+        </div>
+        <div class="steps">
+          <article class="step reveal">
+            <div class="step-top"><span class="step-number">01</span><svg class="icon">
+                <use href="#i-form" />
+              </svg></div>
+            <h3>Apply Online</h3>
+            <p>Fill in a simple form with your basic details.</p>
+          </article>
+          <article class="step reveal">
+            <div class="step-top"><span class="step-number">02</span><svg class="icon">
+                <use href="#i-shield" />
+              </svg></div>
+            <h3>Get Approved</h3>
+            <p>Our team verifies your details and documents.</p>
+          </article>
+          <article class="step reveal">
+            <div class="step-top"><span class="step-number">03</span><svg class="icon">
+                <use href="#i-wallet" />
+              </svg></div>
+            <h3>Loan Disbursal</h3>
+            <p>Once approved, the eligible amount is processed.</p>
+          </article>
+          <article class="step reveal">
+            <div class="step-top"><span class="step-number">04</span><svg class="icon">
+                <use href="#i-star" />
+              </svg></div>
+            <h3>Achieve Your Goals</h3>
+            <p>Use your loan to move closer to your goals.</p>
+          </article>
+        </div>
+        <p class="process-note">Loan approval, rates and disbursal are subject to eligibility, verification and
+          applicable terms.</p>
+      </div>
+    </section>
+
+    <section id="why-us" class="why-section">
+      <div class="container why-grid">
+        <div class="why-content reveal"><span class="eyebrow">THE CAPIFY DIFFERENCE</span>
+          <h2>Your Trust,<br>Our <span>Priority.</span></h2>
+          <p>At Capify, we are committed to providing transparent loan solutions and dependable customer support.</p><a
+            href="#application" class="button">Get Started <svg class="icon">
+              <use href="#i-arrow" />
+            </svg></a>
+        </div>
+        <div class="benefit-grid">
+          <div class="benefit reveal"><svg class="icon">
+              <use href="#i-bolt" />
+            </svg>
+            <h3>Quick Processing</h3>
+            <p>Less waiting. More moving forward.</p>
+          </div>
+          <div class="benefit reveal"><svg class="icon">
+              <use href="#i-percent" />
+            </svg>
+            <h3>Competitive Rates</h3>
+            <p>Options that work with your plans.</p>
+          </div>
+          <div class="benefit reveal"><svg class="icon">
+              <use href="#i-shield" />
+            </svg>
+            <h3>Secure &amp; Transparent</h3>
+            <p>Clarity at every step of your journey.</p>
+          </div>
+          <div class="benefit reveal"><svg class="icon">
+              <use href="#i-support" />
+            </svg>
+            <h3>Dedicated Support</h3>
+            <p>A helping hand when you need it.</p>
+          </div>
+          <div class="benefit benefit-wide reveal"><svg class="icon">
+              <use href="#i-star" />
+            </svg>
+            <div>
+              <h3>Customer Focused</h3>
+              <p>Your needs at the heart of what we do.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-heading centered reveal"><span class="eyebrow">LET'S MAKE IT HAPPEN</span>
+          <h2>Your next step starts with a conversation.</h2>
+          <p>Tell us what you have in mind. We're here to help you move forward.</p>
+        </div>
+        <div class="contact-grid">
+          <aside class="contact-card reveal"><span class="eyebrow">WE'RE HERE FOR YOU</span>
+            <h2>Visit Us</h2>
+            <p class="contact-intro">Big plans deserve a personal touch.<br>Let's talk about yours.</p>
+            <div class="contact-item"><span class="mini-icon"><svg class="icon">
+                  <use href="#i-pin" />
+                </svg></span>
+              <div>
+                <h3>Capify</h3>
+                <address>5B/9 Tilak Nagar<br>Opposite Metro Pillar No. 480<br>New Delhi - 110018</address><a
+                  class="text-link"
+                  href="https://www.google.com/maps/search/?api=1&amp;query=5B%2F9%20Tilak%20Nagar%20New%20Delhi%20110018"
+                  target="_blank" rel="noopener noreferrer">Get Directions ↗</a>
+              </div>
+            </div>
+            <div class="contact-item"><span class="mini-icon"><svg class="icon">
+                  <use href="#i-phone" />
+                </svg></span>
+              <div>
+                <h3>Call Us</h3>
+                <p>+91 XXXXX XXXXX</p><small>Phone number to be updated</small>
+              </div>
+            </div>
+            <div class="contact-item"><span class="mini-icon"><svg class="icon">
+                  <use href="#i-mail" />
+                </svg></span>
+              <div>
+                <h3>Email Us</h3>
+                <p>info@example.com</p><small>Email address to be updated</small>
+              </div>
+            </div>
+            <div class="contact-reassurance"><svg class="icon">
+                <use href="#i-shield" />
+              </svg><span>Personal support.<br><strong>Every step of the way.</strong></span></div>
+          </aside>
+          <div id="application" class="application-card reveal"><span class="form-tag">LET'S GET STARTED
+              <span>↗</span></span>
+            <h2>Apply for Your Loan Today</h2>
+            <p>Fill in your details and our team will get back to you shortly.</p>
+            <div class="demo-notice">Demo application — details are checked in your browser only. Nothing is sent or
+              saved, and no callback is requested.</div>
+            <form id="loan-form" novalidate>
+              <div class="form-grid">
+                <div class="field"><label for="full-name">Full Name <span>*</span></label><input id="full-name"
+                    name="fullName" autocomplete="name" placeholder="Your full name" required maxlength="100"
+                    aria-describedby="full-name-error"><small class="field-error" id="full-name-error"></small></div>
+                <div class="field"><label for="mobile">Mobile Number <span>*</span></label>
+                  <div class="phone-input"><span>+91</span><input id="mobile" name="mobile" type="tel" inputmode="tel"
+                      autocomplete="tel-national" placeholder="10-digit mobile number" required maxlength="18"
+                      aria-describedby="mobile-error"></div><small class="field-error" id="mobile-error"></small>
+                </div>
+                <div class="field"><label for="email">Email Address <span>*</span></label><input id="email" name="email"
+                    type="email" autocomplete="email" placeholder="you@example.com" required maxlength="254"
+                    aria-describedby="email-error"><small class="field-error" id="email-error"></small></div>
+                <div class="field"><label for="loan-type">Loan Type <span>*</span></label><select id="loan-type"
+                    name="loanType" required aria-describedby="loan-type-error">
+                    <option value="">Select a loan type</option>
+                    <option>Personal Loan</option>
+                    <option>Home Loan</option>
+                    <option>Car Loan</option>
+                    <option>Business Loan</option>
+                    <option>Education Loan</option>
+                    <option>Loan Against Property</option>
+                    <option>Other</option>
+                  </select><small class="field-error" id="loan-type-error"></small></div>
+                <div class="field full-width"><label for="amount">Loan Amount (₹) <span>*</span></label><input
+                    id="amount" name="amount" type="number" inputmode="numeric" min="1" step="1"
+                    placeholder="Enter your desired loan amount" required aria-describedby="amount-error"><small
+                    class="field-error" id="amount-error"></small></div>
+                <div class="field full-width"><label for="message">Message <span
+                      class="optional">(optional)</span></label><textarea id="message" name="message" rows="3"
+                    maxlength="2000" placeholder="Tell us a little about your plans..."></textarea></div>
+              </div><button type="submit" class="button submit-button"><span class="submit-label">Submit
+                  Application</span><svg class="icon">
+                  <use href="#i-arrow" />
+                </svg><span class="spinner" hidden></span></button>
+              <p class="form-assurance"><svg class="icon">
+                  <use href="#i-shield" />
+                </svg> Your information stays in this browser. Frontend demo only.</p>
+              <div id="form-status" class="form-status" role="status" tabindex="-1" hidden></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand"><a class="brand" href="#home"><img src="images/capify-logo.png"
+              alt="Capify — UNIT OF MEDIPEY CREDIT PVT LTD" width="653" height="228" loading="lazy"></a>
+          <p>For the life you imagine.<br>For the plans you're ready to make.</p>
+          <div class="social-links" aria-label="Social profiles coming soon"><span
+              aria-label="Facebook placeholder">f</span><span aria-label="Instagram placeholder">◎</span><span
+              aria-label="LinkedIn placeholder">in</span><small>Stay connected · Coming soon</small></div>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <div class="footer-links"><a href="#home">Home</a><a href="#loans">Our Loans</a><a href="#why-us">Why Choose
+              Us</a><a href="#how-it-works">How It Works</a><a href="#contact">Contact</a></div>
+        </div>
+        <div class="footer-contact">
+          <h3>Get in Touch</h3>
+          <p><svg class="icon">
+              <use href="#i-pin" />
+            </svg><span>5B/9 Tilak Nagar, Opposite Metro Pillar No. 480,<br>New Delhi - 110018</span></p>
+          <p><svg class="icon">
+              <use href="#i-phone" />
+            </svg>+91 XXXXX XXXXX</p>
+          <p><svg class="icon">
+              <use href="#i-mail" />
+            </svg>info@example.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Capify. All Rights Reserved.</span>
+        <div><button data-policy="privacy">Privacy Policy</button><span>·</span><button data-policy="terms">Terms &amp;
+            Conditions</button></div><span>Big plans start here. <span class="orange">↗</span></span>
+      </div>
+    </div>
+  </footer>
+  <a href="#home" class="back-to-top" aria-label="Back to top" hidden>↑</a>
+  <dialog id="info-dialog" aria-labelledby="dialog-title"><button class="dialog-close"
+      aria-label="Close dialog">×</button><span class="eyebrow" id="dialog-label">EXPLORE YOUR OPTIONS</span>
+    <h2 id="dialog-title"></h2>
+    <p id="dialog-description"></p>
+    <p id="dialog-note"></p><a href="#application" class="button" id="dialog-apply">Explore this loan <svg class="icon">
+        <use href="#i-arrow" />
+      </svg></a>
+  </dialog>
+</body>
+
+</html>
