@@ -2552,6 +2552,70 @@ dialog p {
     }
 }
 
+.contact-item > div,
+.footer-contact {
+    min-width: 0
+}
+
+.contact-item a,
+.footer-contact a {
+    overflow-wrap: anywhere
+}
+
+.contact-item a:hover,
+.footer-contact a:hover {
+    text-decoration: underline
+}
+
+.whatsapp-icon {
+    color: #128c4a;
+    background: #e7f8ee
+}
+
+.footer {
+    padding-bottom: calc(88px + env(safe-area-inset-bottom, 0px))
+}
+
+.contact-widget {
+    position: fixed;
+    bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+    width: 56px;
+    height: 56px;
+    display: grid;
+    place-items: center;
+    border: 2px solid white;
+    border-radius: 50%;
+    color: white;
+    box-shadow: 0 5px 20px #062b5533;
+    z-index: 40;
+    transition: transform .2s, box-shadow .2s
+}
+
+.contact-widget .icon {
+    width: 28px;
+    height: 28px
+}
+
+.contact-widget:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px #062b5544
+}
+
+.contact-widget-call {
+    left: max(20px, env(safe-area-inset-left, 0px));
+    background: var(--blue)
+}
+
+.contact-widget-whatsapp {
+    right: max(20px, env(safe-area-inset-right, 0px));
+    background: #128c4a
+}
+
+.back-to-top {
+    bottom: calc(90px + env(safe-area-inset-bottom, 0px));
+    right: max(27px, env(safe-area-inset-right, 0px))
+}
+
 @media(prefers-reduced-motion:reduce) {
     html {
         scroll-behavior: auto

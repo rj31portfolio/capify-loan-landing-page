@@ -62,6 +62,10 @@
       <symbol id="i-phone" viewBox="0 0 24 24">
         <path d="m5 3 4 1 1 5-3 2c2 3 3 4 6 6l2-3 5 1 1 4c-1 6-10 1-14-3S-2 4 5 3Z" />
       </symbol>
+      <symbol id="i-whatsapp" viewBox="0 0 24 24">
+        <path d="M21 11.5a9 9 0 0 1-13.4 7.9L3 21l1.6-4.6A9 9 0 1 1 21 11.5Z" />
+        <path d="m8 7 2 .5.5 2-1.3 1c1 1.8 2 2.8 3.8 3.8l1-1.3 2 .5.5 2c-.5 2-3.5 1-5.8-1.3S6 7.5 8 7Z" />
+      </symbol>
       <symbol id="i-pin" viewBox="0 0 24 24">
         <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z" />
         <circle cx="12" cy="10" r="2.5" />
@@ -102,9 +106,9 @@
           href="#why-us">Why Choose Us</a><a href="#how-it-works">How It Works</a><a href="#contact">Contact</a>
       </nav>
       <div class="nav-actions">
-        <div class="call-us"><svg class="icon">
+        <a class="call-us" href="tel:+919811889234"><svg class="icon" aria-hidden="true">
             <use href="#i-phone" />
-          </svg><span>Call Us<strong>+91 XXXXX XXXXX</strong></span></div><a href="#application"
+          </svg><span>Call Us<strong>+91 9811889234</strong></span></a><a href="#application"
           class="button button-small">Apply Now <svg class="icon">
             <use href="#i-arrow" />
           </svg></a><button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"
@@ -290,7 +294,7 @@
       </div>
     </section>
 
-    <!-- <section id="why-us" class="why-section">
+    <section id="why-us" class="why-section">
       <div class="container why-grid">
         <div class="why-content reveal"><span class="eyebrow">THE CAPIFY DIFFERENCE</span>
           <h2>Your Trust,<br>Our <span>Priority.</span></h2>
@@ -362,7 +366,15 @@
                 </svg></span>
               <div>
                 <h3>Call Us</h3>
-                <p>+91 XXXXX XXXXX</p><small>Phone number to be updated</small>
+                <p><a href="tel:+919811889234">+91 9811889234</a></p>
+              </div>
+            </div>
+            <div class="contact-item"><span class="mini-icon whatsapp-icon"><svg class="icon" aria-hidden="true">
+                  <use href="#i-whatsapp" />
+                </svg></span>
+              <div>
+                <h3>WhatsApp Us</h3>
+                <p><a href="https://wa.me/919811889989" target="_blank" rel="noopener noreferrer">+91 9811889989</a></p>
               </div>
             </div>
             <div class="contact-item"><span class="mini-icon"><svg class="icon">
@@ -370,7 +382,7 @@
                 </svg></span>
               <div>
                 <h3>Email Us</h3>
-                <p>info@example.com</p><small>Email address to be updated</small>
+                <p><a href="mailto:capifysales@gmail.com">capifysales@gmail.com</a></p>
               </div>
             </div>
             <div class="contact-reassurance"><svg class="icon">
@@ -426,7 +438,7 @@
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
   </main>
   <footer class="footer">
     <div class="container">
@@ -450,10 +462,14 @@
             </svg><span>5B/9 Tilak Nagar, Opposite Metro Pillar No. 480,<br>New Delhi - 110018</span></p>
           <p><svg class="icon">
               <use href="#i-phone" />
-            </svg>+91 XXXXX XXXXX</p>
+            </svg><a href="tel:+919811889234" aria-label="Call us at +91 9811889234">+91 9811889234</a></p>
+          <p><svg class="icon" aria-hidden="true">
+              <use href="#i-whatsapp" />
+            </svg><a href="https://wa.me/919811889989" target="_blank" rel="noopener noreferrer"
+              aria-label="WhatsApp us at +91 9811889989">+91 9811889989</a></p>
           <p><svg class="icon">
               <use href="#i-mail" />
-            </svg>info@example.com</p>
+            </svg><a href="mailto:capifysales@gmail.com">capifysales@gmail.com</a></p>
         </div>
       </div>
       <div class="footer-bottom"><span>© 2026 Capify. All Rights Reserved.</span>
@@ -461,6 +477,15 @@
             Conditions</button></div><span>Big plans start here. <span class="orange">↗</span></span>
       </div>
     </div>
+    <a class="contact-widget contact-widget-call" href="tel:+919811889234"
+      aria-label="Call Capify at +91 9811889234" title="Call +91 9811889234">
+      <svg class="icon" aria-hidden="true"><use href="#i-phone" /></svg>
+    </a>
+    <a class="contact-widget contact-widget-whatsapp" href="https://wa.me/919811889989"
+      target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Capify at +91 9811889989"
+      title="WhatsApp +91 9811889989">
+      <svg class="icon" aria-hidden="true"><use href="#i-whatsapp" /></svg>
+    </a>
   </footer>
   <a href="#home" class="back-to-top" aria-label="Back to top" hidden>↑</a>
   <dialog id="info-dialog" aria-labelledby="dialog-title"><button class="dialog-close"
