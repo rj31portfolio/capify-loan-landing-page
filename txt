@@ -3,15 +3,13 @@ https://capify-loan.netlify.app/
  *Daily Website Development Report*
 *Date:* 17/09/2026
 *Name:* Raju Ali
-*Project Name:* Lotus Villa, Capify Loan Website
-*Today’s Work Completed:*- work on form process 
-                           working on capify website 
-                           create google ad MKW
+*Project Name:* Capify Loan Website
+*Today’s Work Completed:*- make landing page capify
+                           
 *Website Live Link* https://capify-loan.netlify.app/
 *Issues / Challenges:*- Na
 *Feedback Call Update:*-0
 
 *Pending From Client / Team:*- Na
 *Google Ads* - Ads Manages
-conversation set code
 
