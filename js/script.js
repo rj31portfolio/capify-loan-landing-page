@@ -148,7 +148,7 @@ document.querySelectorAll('[data-details]').forEach(button => button.addEventLis
   document.querySelector('#dialog-label').textContent = 'EXPLORE YOUR OPTIONS';
   document.querySelector('#dialog-title').textContent = type;
   document.querySelector('#dialog-description').textContent = loanDetails[type];
-  document.querySelector('#dialog-note').textContent = 'Eligibility, documents, interest rates and repayment terms depend on assessment. This website does not provide a loan offer or guarantee approval.';
+  document.querySelector('#dialog-note').textContent = 'Eligibility, documents, interest rates and repayment terms depend on assessment. This website provide a loan offer or guarantee approval.';
   dialogApply.hidden = false;
   dialogApply.dataset.loan = type;
   dialog.showModal();
