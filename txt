@@ -1,10 +1,11 @@
 https://capify-loan.netlify.app/
 
  *Daily Website Development Report*
-*Date:* 17/09/2026
+*Date:* 18/09/2026
 *Name:* Raju Ali
 *Project Name:* Capify Loan Website
 *Today’s Work Completed:*- make landing page capify
+                           domain transfer on reseller club
                            
 *Website Live Link* https://capify-loan.netlify.app/
 *Issues / Challenges:*- Na
@@ -13,3 +14,4 @@ https://capify-loan.netlify.app/
 *Pending From Client / Team:*- Na
 *Google Ads* - Ads Manages
 
+in that form make working by smtp server php and sweet alert by gmail on mail id 

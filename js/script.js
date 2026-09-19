@@ -106,31 +106,66 @@ function selectLoan(type) {
 }
 document.querySelectorAll('[data-loan]').forEach(link => link.addEventListener('click', () => selectLoan(link.dataset.loan)));
 
-form.addEventListener('submit', event => {
+function showSubmissionResult(icon, title, message) {
+  status.textContent = message;
+  status.hidden = false;
+  if (window.Swal) {
+    return window.Swal.fire({ icon, title, text: message, confirmButtonColor: '#0756A8' });
+  }
+  status.focus({ preventScroll: true });
+  status.scrollIntoView({ behavior: reducedMotion.matches ? 'instant' : 'smooth', block: 'nearest' });
+}
+
+form.addEventListener('submit', async event => {
   event.preventDefault();
   const button = form.querySelector('button[type="submit"]');
   if (button.disabled) return;
   status.hidden = true;
   const validity = fields.map(validate);
   if (validity.includes(false)) { fields[validity.indexOf(false)].focus(); return; }
+  const payload = new FormData(form);
+  payload.set('amount', String(Number(form.elements.amount.value)));
   button.disabled = true;
   form.setAttribute('aria-busy', 'true');
-  button.querySelector('.submit-label').textContent = 'Checking your details…';
+  button.querySelector('.submit-label').textContent = 'Sending application...';
   button.querySelector('.spinner').hidden = false;
   button.querySelector('.icon').hidden = true;
-  setTimeout(() => {
+  const controls = [...form.querySelectorAll('input, select, textarea')];
+  controls.forEach(control => { control.disabled = true; });
+  try {
+    const response = await fetch(form.action, {
+      method: 'POST',
+      headers: { 'X-Requested-With': 'XMLHttpRequest', 'Accept': 'application/json' },
+      body: payload
+    });
+    const result = await response.json();
+    if (!response.ok || result.success !== true) {
+      if (result.errors && typeof result.errors === 'object') {
+        Object.entries(result.errors).forEach(([name, message]) => {
+          const field = form.elements.namedItem(name);
+          const error = field && document.getElementById(field.id + '-error');
+          if (error) { field.setAttribute('aria-invalid', 'true'); error.textContent = message; }
+        });
+      }
+      throw new Error(result.message || 'We could not send your application. Please try again later.');
+    }
     form.reset();
-    fields.forEach(field => { field.removeAttribute('aria-invalid'); document.getElementById(`${field.id}-error`).textContent = ''; });
-    status.textContent = '✓ Demo complete! Your details passed validation. Nothing was sent or saved, and no application or callback has been created.';
-    status.hidden = false;
+    controls.forEach(field => field.removeAttribute('aria-invalid'));
+    form.querySelectorAll('.field-error').forEach(error => { error.textContent = ''; });
+    showSubmissionResult('success', 'Application sent!', result.message);
+  } catch (error) {
+    const message = error instanceof SyntaxError || error instanceof TypeError
+      ? 'Unable to confirm submission. Please check your connection or call us before trying again.'
+      : error.message;
+    showSubmissionResult('error', 'Application not confirmed', message);
+  } finally {
+    controls.forEach(control => { control.disabled = false; });
     form.removeAttribute('aria-busy');
     button.disabled = false;
     button.querySelector('.submit-label').textContent = 'Submit Application';
     button.querySelector('.spinner').hidden = true;
     button.querySelector('.icon').hidden = false;
-    status.focus({ preventScroll: true });
-    status.scrollIntoView({ behavior: reducedMotion.matches ? 'instant' : 'smooth', block: 'nearest' });
-  }, 850);
+  }
 });
 
 const dialog = document.querySelector('#info-dialog');
@@ -161,10 +196,10 @@ dialog.addEventListener('click', event => {
 });
 document.querySelectorAll('[data-policy]').forEach(button => button.addEventListener('click', () => {
   const privacy = button.dataset.policy === 'privacy';
-  document.querySelector('#dialog-label').textContent = 'ABOUT THIS DEMO';
+  document.querySelector('#dialog-label').textContent = 'APPLICATION INFORMATION';
   document.querySelector('#dialog-title').textContent = privacy ? 'Privacy Policy' : 'Terms & Conditions';
-  document.querySelector('#dialog-description').textContent = privacy ? 'This demonstration checks form entries locally in your browser. It does not send application details to a server, store them in browser storage, or use analytics. Google Fonts may make requests to Google; the map link opens Google Maps only when selected.' : 'This is a demonstration website. Submitting the form does not create a loan application, request a callback, or establish an agreement. Displayed loan categories are informational; no approval, rate or disbursal is guaranteed. Phone, email and social profiles are placeholders.';
-  document.querySelector('#dialog-note').textContent = 'Production policies and verified company contact details must be supplied before this site accepts real applications.';
+  document.querySelector('#dialog-description').textContent = privacy ? 'When you submit this form, your name, mobile number, email, loan type, amount and optional message are sent to Capify by email through Gmail so our team can respond to your enquiry. Please do not include account passwords or sensitive documents. Google Fonts and SweetAlert may load resources from external providers.' : 'Submitting this form sends a loan enquiry to Capify. It does not guarantee approval, an interest rate or disbursal, and does not establish a loan agreement. Eligibility and terms are subject to assessment.';
+  document.querySelector('#dialog-note').textContent = 'For questions about your enquiry or information, contact capifysales@gmail.com.';
   dialogApply.hidden = true;
   dialog.showModal();
 }));

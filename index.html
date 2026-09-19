@@ -22,9 +22,9 @@
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;650;700;750;800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js" defer></script>
   <script src="js/script.js" defer></script>
 </head>
-
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -393,9 +393,8 @@
               <span>↗</span></span>
             <h2>Apply for Your Loan Today</h2>
             <p>Fill in your details and our team will get back to you shortly.</p>
-            <div class="demo-notice">Demo application — details are checked in your browser only. Nothing is sent or
-              saved, and no callback is requested.</div>
-            <form id="loan-form" novalidate>
+            <form id="loan-form" action="submit-loan.php" method="post" novalidate>
+              <div hidden aria-hidden="true"><label for="website">Website</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
               <div class="form-grid">
                 <div class="field"><label for="full-name">Full Name <span>*</span></label><input id="full-name"
                     name="fullName" autocomplete="name" placeholder="Your full name" required maxlength="100"
@@ -425,14 +424,14 @@
                     class="field-error" id="amount-error"></small></div>
                 <div class="field full-width"><label for="message">Message <span
                       class="optional">(optional)</span></label><textarea id="message" name="message" rows="3"
-                    maxlength="2000" placeholder="Tell us a little about your plans..."></textarea></div>
+                    maxlength="2000" aria-describedby="message-error" placeholder="Tell us a little about your plans..."></textarea><small class="field-error" id="message-error"></small></div>
               </div><button type="submit" class="button submit-button"><span class="submit-label">Submit
                   Application</span><svg class="icon">
                   <use href="#i-arrow" />
                 </svg><span class="spinner" hidden></span></button>
               <p class="form-assurance"><svg class="icon">
                   <use href="#i-shield" />
-                </svg> Your information stays in this browser. Frontend demo only.</p>
+                </svg> By submitting, you agree that Capify may contact you about your loan enquiry.</p>
               <div id="form-status" class="form-status" role="status" tabindex="-1" hidden></div>
             </form>
           </div>
