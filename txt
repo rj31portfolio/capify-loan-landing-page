@@ -14,4 +14,3 @@ https://capify-loan.netlify.app/
 *Pending From Client / Team:*- Na
 *Google Ads* - Ads Manages
 
-in that form make working by smtp server php and sweet alert by gmail on mail id 
