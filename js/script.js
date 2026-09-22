@@ -171,12 +171,12 @@ form.addEventListener('submit', async event => {
 const dialog = document.querySelector('#info-dialog');
 const dialogApply = document.querySelector('#dialog-apply');
 const loanDetails = {
-  'Home Loan': 'Take the next step towards a home of your own. Discuss your property plans, desired loan amount and repayment preferences with our team.',
-  'Car Loan': 'Plan your next car with financing suited to your needs. Share your vehicle plans and budget to explore the available options.',
-  'Business Loan': 'From working capital to your next phase of growth, explore financing for your business. Tell us about your business and funding requirements.',
-  'Education Loan': 'Make room for your next learning opportunity. Share your course, institution and expected education costs to discuss funding options.',
-  'Personal Loan': 'Explore funding for your personal plans and everyday milestones. Tell us the amount you need and your preferred repayment approach.',
-  'Loan Against Property': 'Explore financing secured against eligible property. Share your funding needs and property details to discuss suitable options.'
+  'Home Loan': 'Take the next step towards a home of your own. Discuss your property plans, desired loan amount and repayment preferences with our team. Starting interest rate: 7.15% p.a.',
+  'Business Loan': 'From working capital to your next phase of growth, explore financing for your business. Tell us about your business and funding requirements. Starting interest rate: 12% p.a.',
+  'Working Capital': 'Support your day-to-day business operations with funding for inventory, payroll, suppliers and growth needs. Starting interest rate: 8.25% p.a.',
+  'CGTMSE': 'Explore eligible collateral-free credit support for micro and small businesses through the CGTMSE framework. Starting interest rate: 10% p.a.',
+  'Personal Loan': 'Explore funding for your personal plans and everyday milestones. Tell us the amount you need and your preferred repayment approach. Starting interest rate: 9.99% p.a.',
+  'Loan Against Property': 'Explore financing secured against eligible property. Share your funding needs and property details to discuss suitable options. Starting interest rate: 8.15% p.a.'
 };
 document.querySelectorAll('[data-details]').forEach(button => button.addEventListener('click', () => {
   const type = button.dataset.details;
