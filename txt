@@ -17,4 +17,3 @@ https://capify-loan.netlify.app/
 *Pending From Client / Team:*- Na
 *Google Ads* - Ads Manages
 
-in that project file css and js not working so check and fix 

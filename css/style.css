@@ -964,50 +964,26 @@ h1>span {
 .partner-set {
     display: flex;
     align-items: center;
-    gap: 18px;
-    padding-right: 18px
+    justify-content: space-around;
+    flex-shrink: 0;
+    min-width: 100vw;
+    gap: 36px;
+    padding: 0 18px
 }
 
 .partner-logo {
     display: inline-flex;
     align-items: center;
-    gap: 11px;
-    min-width: 190px;
-    height: 68px;
-    padding: 0 20px;
-    border: 1px solid #e0eaf4;
-    border-radius: 14px;
-    background: linear-gradient(145deg, #fff, #f5f9fe);
-    color: #63768c;
-    box-shadow: 0 8px 22px #062b5509;
-    font-size: 10px;
-    font-weight: 750;
-    letter-spacing: .5px;
-    white-space: nowrap
+    justify-content: center;
+    flex: 0 0 200px;
+    height: 88px
 }
 
-.partner-logo b {
-    display: grid;
-    place-items: center;
-    min-width: 34px;
-    height: 34px;
-    padding: 0 5px;
-    border-radius: 9px;
-    background: var(--blue);
-    color: #fff;
-    font-family: Manrope, Arial, sans-serif;
-    font-size: 10px;
-    letter-spacing: -.5px
-}
-
-.partner-logo:nth-child(2n) b {
-    background: var(--orange);
-    color: var(--navy)
-}
-
-.partner-logo:nth-child(3n) b {
-    background: #eaf3ff;
-    color: var(--blue)
+.partner-logo img {
+    display: block;
+    max-width: 178px;
+    max-height: 62px;
+    object-fit: contain
 }
 
 .partner-marquee:hover .partner-track {
