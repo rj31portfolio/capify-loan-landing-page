@@ -958,31 +958,32 @@ h1>span {
 .partner-track {
     display: flex;
     width: max-content;
-    animation: partner-loop 30s linear infinite
+    animation: partner-loop 45s linear infinite
 }
 
 .partner-set {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     flex-shrink: 0;
     min-width: 100vw;
-    gap: 36px;
-    padding: 0 18px
+    gap: 16px;
+    padding: 0 8px
 }
 
 .partner-logo {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    flex: 0 0 200px;
-    height: 88px
+    flex: 0 0 164px;
+    height: 76px
 }
 
 .partner-logo img {
     display: block;
-    max-width: 178px;
-    max-height: 62px;
+    width: auto;
+    height: auto;
+    max-width: 154px;
+    max-height: 56px;
     object-fit: contain
 }
 
