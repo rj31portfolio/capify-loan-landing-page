@@ -1,15 +1,15 @@
 https://capify-loan.netlify.app/
 
  *Daily Website Development Report*
-*Date:* 21/09/2026
+*Date:* 29/09/2026
 *Name:* Raju Ali
-*Project Name:* Capify Loan Website
-*Today’s Work Completed:*- work on form make working 
-                           google ad mkw landing page make google site
-                           check compromied website mkw
-                           naman system corel software cracked version setup
-                           domain transfer 
-                           
+*Project Name:* Capify Loan Website and viral ads media
+*Today’s Work Completed:*- all service cards tag line update
+                           contact page marquee tagline change
+                           footer icon not show fix in home, portfolio,contact page
+                           and ad new section on home page seo content section
+                            capify website change in banner and update
+                           pumk domain transfer 
 *Website Live Link* https://capify-loan.netlify.app/
 *Issues / Challenges:*- Na
 *Feedback Call Update:*-0
@@ -17,4 +17,3 @@ https://capify-loan.netlify.app/
 *Pending From Client / Team:*- Na
 *Google Ads* - Ads Manages
 
- footer logo white space adjust and logo under tagline update 
