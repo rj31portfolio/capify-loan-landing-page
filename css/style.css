@@ -463,7 +463,7 @@ h1>span {
 .photo-frame img {
     width          : 100%;
     height         : 100%;
-    object-fit     : cover;
+    object-fit     : fill;
     object-position: center -14%;
     transform      : rotate(3deg) scale(1.09);
     transition     : transform .7s
@@ -473,7 +473,7 @@ h1>span {
     transform: rotate(3deg) scale(1.14)
 }
 
-.orbit {
+/* .orbit {
     position     : absolute;
     border       : 1px solid #bad4ed;
     border-radius: 50%;
@@ -482,7 +482,7 @@ h1>span {
     top          : 33px;
     left         : 1%;
     transform    : rotate(-24deg)
-}
+} */
 
 .orbit-two {
     width       : 79%;
